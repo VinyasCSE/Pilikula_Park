@@ -1,0 +1,168 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f7fa; /* Light background for a clean look */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #394b5d; /* Darker shade for the header */
+    padding: 1.5em;
+    color: #fff;
+    text-align: center;
+    border-bottom: 4px solid #4CAF50; /* Green accent border */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Hover effect to match green theme */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('path_to_hero_image.jpg'); /* Replace with an actual image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+    border-bottom: 5px solid #4CAF50;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* General Section Styling */
+.section {
+    padding: 3em;
+    background-color: #ffffff;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around sections */
+    max-width: 1100px; /* Centering and max-width for larger screens */
+    border-top: 4px solid #2b3d4f; /* Accent border */
+}
+
+.section h2 {
+    font-size: 2.5em;
+    color: #2b3d4f;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Attractions Section (List Styling) */
+.attractions-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5em;
+    margin-top: 1.5em;
+}
+
+.attractions-list li {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attractions-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5em;
+    background-color: #2b3d4f;
+    color: #fff;
+    margin-top: 3em;
+    border-top: 4px solid #4CAF50;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2.2em;
+    }
+
+    .cta-button {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    .section {
+        padding: 2em;
+    }
+
+    .attractions-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
